@@ -11,11 +11,11 @@ int main()
     json jsonData = json::parse(data);
     int it = 0;
 
-    while (to_string(jsonData[it]["id"]).length() < 4)
-    {
+    while(!jsonData[it]["id"].is_null()) {
         std::cout << "id: " << jsonData[it]["id"] << std::endl;
         std::cout << "Name: " << jsonData[it]["name"]["english"] << std::endl;
-        std::cout << "Type: " << jsonData[it]["type"] << std::endl << std::endl;
+        std::cout << "Type: " << jsonData[it]["type"] << std::endl;
+        std::cout << "Base: " << jsonData[it]["base"] << std::endl << std::endl;
         it++;
     }
 
