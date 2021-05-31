@@ -27,9 +27,9 @@ system package manager, for example:
 Windows
 -----
 
-Just download [`json.hpp`](https://github.com/nlohmann/json/blob/develop/single_include/nlohmann/json.hpp). <br> This is the single required file in `single_include/nlohmann` or [released here](https://github.com/nlohmann/json/releases). You need to add
+Just download [`json.hpp`](https://github.com/nlohmann/json/blob/develop/single_include/nlohmann/json.hpp). <br> This is the single required file in `single_include/nlohmann` or [released here](https://github.com/nlohmann/json/releases). After put the downloaded file in your directory, you need to add
 ```cpp
-#include <nlohmann/json.hpp>
+#include "nlohmann/json.hpp"
 
 // for convenience
 using json = nlohmann::json;
